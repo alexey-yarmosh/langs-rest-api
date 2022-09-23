@@ -1,0 +1,78 @@
+(start)
+(print start)
+(use 'ring.adapter.jetty)
+(start)
+(-main)
+(start)
+(use 'clojure-ring.core)
+(start)
+(app {:request-method :get
+      :uri "/api/math"
+      :query-params {:x "1", :y "2"}})
+(start)
+(app {:request-method :get
+      :uri "/api/math"
+      :query-params {:x "1", :y "2"}})
+(printls (app {:request-method :get
+      :uri "/api/math"
+      :query-params {:x "1", :y "2"}}))
+(app {:request-method :get
+      :uri "/api/math"
+(println (app {:request-method :get
+      :uri "/api/math"
+      :query-params {:x "1", :y "2"}}))
+(prn (app {:request-method :get
+      :uri "/api/math"
+      :query-params {:x "1", :y "2"}}))
+(app {:request-method :get
+      :uri "/api/math"
+      :query-params {:x "1", :y "a"}})
+(start)
+(.start server)
+(.stop server)
+(.start server)
+(.stop server)
+(.start server)
+(.stop server)
+(.start server)
+(slurp ./data.json)
+(slurp "data.json")
+pwd
+(-> (java.io.File. ".") .getAbsolutePath)
+(slurp "src/clojure_ring/data.json")
+(json/parse-stream (clojure.java.io/reader "src/clojure_ring/data.json"))
+(require '[cheshire.core :as json])
+(json/parse-stream (clojure.java.io/reader "src/clojure_ring/data.json"))
+(def todos (:todos (json/parse-stream (clojure.java.io/reader "src/clojure_ring/data.json"))))
+(print todos)
+(def todos (json/parse-stream (clojure.java.io/reader "src/clojure_ring/data.json")))
+todos
+string? todos
+(string? todos)
+(type todos)
+(:todos todos)
+(:todos "todos")
+(prn todos)
+(def todos (json/parse-stream (clojure.java.io/reader "src/clojure_ring/data.json")))
+(parse-string "{"foo":"bar"}")
+(parse-string "{\"foo\":\"bar\"}")
+(json/parse-string "{\"foo\":\"bar\"}")
+(todos :todos)
+(get todos "todos")
+(first (get todos "todos"))
+(println todos)
+(get-todos-by-id 1)
+(get-todos-by-id "1")
+(println todos)
+(first (println todos)
+)
+(type todos)
+(type (first todos))
+(type ((first todos) :id))
+(first todos)
+(get "id" *1)
+(get *1 "id")
+(get (first todos) "id")
+((first todos) "id")
+((first todos) :id)
+∂df
